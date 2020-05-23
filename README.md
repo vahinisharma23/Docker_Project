@@ -13,24 +13,26 @@ Compose is a tool for defining and running multi-container Docker applications. 
 -mysql:5.7 , 
 -joomla:3.9.18-php7.2-apache
 # Steps
-Create a directory and move in
+1 Create a directory and move in
 ```
 mkdir /mycompose
 cd /mycompose
 ```
 
-Open docker-compose file with .yml extension.
+2 Open docker-compose file with .yml extension.
 ```
 vim docker-compose.yml
 ```
-Write the code and save & exit.
+3 Write the code and save & exit.
 
-Run the docker-compose file.
+4 Run the docker-compose file.
 ```
 docker-compose up
 ```
 # Docker-compose up
-As you run the command (docker-compose up) ,it will complete the set up for launching joomla.And you will see how in console the joomla database image and the joomla php/apache server are fired up. You now have two docker instances running. If you run the command docker service ls you will see them listed.  You can browse by typing (#localhost:80) and then you can see your joomal site start.
+As you run the command (docker-compose up) ,it will complete the set up for launching joomla.And you will see how in console the joomla database image and the joomla php/apache server are fired up. You now have two docker instances running.
+
+If you run the command docker service ls you will see them listed.  You can browse by typing (#localhost:80) and then you can see your joomal site start.
 
 You can stop and start your setup in one click respectively.
 ```
